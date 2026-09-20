@@ -3,7 +3,6 @@ name: pkgdown
 on:
   workflow_call:
 
-permissions: read-all
 
 jobs:
   build:
