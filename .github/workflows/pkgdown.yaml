@@ -2,7 +2,14 @@ name: caller-minimal
 
 on:
   workflow_dispatch:
+  pull_request:
+
+permissions: read-all
 
 jobs:
   call:
     uses: viniciusoike/ci-bisect/.github/workflows/pkgdown.yml@main
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
